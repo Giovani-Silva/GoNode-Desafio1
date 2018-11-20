@@ -11,6 +11,7 @@ nunjucks.configure('views', {
 
 app.set('view engine', 'njk');
 
+app.use(express.static("public"));
 app.use(
   express.urlencoded({
     extended: false
@@ -23,7 +24,7 @@ const checkParams = (req, res, next) => {
 }
 
 const MinorMajor = (req, res, next) => {
-  const view = req.query.age > 18 ? '/major' : '/minor';
+  const view = req.query.age >= 18 ? '/major' : '/minor';
 
   if (view !== req.path) return res.redirect(`${view}?age=${req.query.age}`);
 

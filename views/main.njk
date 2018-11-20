@@ -1,10 +1,9 @@
-<html>
-<body>
-  <h1>Curso GoNode - Desafio 1</h1>
+{% include "base/template.njk" %}
+  <h1>GoNode - Desafio 1</h1>
   <form action="/check" method="POST">
-    <label for="age">Age</label>
-    <input type="text" name="age" id="age">
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" name="age" id="age" autocomplete="off" >
+    </div>
     <button type="submit">Enviar</button>
   </form>
-</body>
-</html>
