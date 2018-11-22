@@ -22,11 +22,4 @@ Rotas
   apenas continuar com o fluxo normal.
 
 ---
-
-## Entrega
-
-Esse desafio não precisa ser entregue e não receberá correção, mas você pode ver o
-resultado do código do desafio feito por mim aqui: https://github.com/Rocketseat/bootcamp-n
-odejs-desafio-01
-
 > “Sua única limitação é você mesmo”!
